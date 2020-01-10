@@ -1,21 +1,22 @@
 import React, { Component } from "react";
 import api from "../../services/api";
 
-import AsyncStorage from "@react-native-community/async-storage";
-
 import {
   View,
   Text,
   TextInput,
   TouchableOpacity,
-  StatusBar
+  StatusBar,
+  AsyncStorage,
+  ActivityIndicator
 } from "react-native";
 
 import styles from "./styles";
 
 export default class Welcome extends Component {
   state = {
-    username: ""
+    username: "",
+    loading: false //Para aparecer o loading no botão
   };
 
   checkUserExists = async username => {
@@ -30,17 +31,22 @@ export default class Welcome extends Component {
 
   signIn = async () => {
     const { username } = this.state;
+    const { navigation } = this.props; //pega o navigation das props
+
+    this.setState({ loading: true });
 
     try {
       await this.checkUserExists(username);
       await this.saveUser(username);
+
+      navigation.navigate("Repositories");
     } catch (err) {
-      console.log("Usuário Inexistente");
+      this.setState({ loading: false, error: true });
     }
   };
 
   render() {
-    const { username } = this.state;
+    const { username, loading, error } = this.state;
     //método obrigatório dentro de um componente
     return (
       <View style={styles.container}>
@@ -49,6 +55,9 @@ export default class Welcome extends Component {
         <Text style={styles.text}>
           Para você continuar precisamos que você informe seu usuário no GitHub
         </Text>
+
+        {error && <Text style={styles.error}>Usuário Inexistente</Text>}
+
         <View style={styles.form}>
           <TextInput
             style={styles.input}
@@ -60,7 +69,11 @@ export default class Welcome extends Component {
             onChangeText={text => this.setState({ username: text })}
           ></TextInput>
           <TouchableOpacity style={styles.button} onPress={this.signIn}>
-            <Text style={styles.buttonText}>Prosseguir</Text>
+            {loading ? ( // Se houver o loading, o botão será a animação, se não o texto de prosseguir
+              <ActivityIndicator size="small" color="#fff" />
+            ) : (
+              <Text style={styles.buttonText}>Prosseguir</Text>
+            )}
           </TouchableOpacity>
         </View>
       </View>
