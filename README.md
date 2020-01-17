@@ -20,7 +20,7 @@
 
 
 <h3 align="center"> :electric_plug: Requeriments </h3>
-<ul style="list-style-type: none">
+<ul>
   <p align="center"><b> Yarn</b> >= 1.17.3</p>
   <p align="center"><b> Expo</b> >= 3.1.2 </p>
   <p align="center"><b>NPM</b> >= 6.9.0 </p>
