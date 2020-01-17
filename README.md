@@ -1,6 +1,8 @@
 <h1 align="center">GitHuber</h1>
-<img src="new_assets/teste1.png" align="center"/> </br>
-<img src="new_assets/teste2.png" align="left"/>
+
+<img src="new_assets/teste1.png" align="left"/> </br>
+</div>
+<img src="new_assets/teste2.png" align="right"/>
 ### :electric_plug: Requeriments
 
 - Node.JS >= 10.16.2
