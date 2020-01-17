@@ -20,18 +20,19 @@
 
 
 <h3 align="center"> :electric_plug: Requeriments </h3>
-<li display="table-cell">
-  <ul>- Yarn >= 1.17.3</ul>
-  <ul>- Expo >= 3.1.2 </ul>
-  <ul>- NPM >= 6.9.0 </ul>
+<li>
+  <ul align="center"><b> Yarn</b> >= 1.17.3</ul>
+  <ul align="center"><b> Expo</b> >= 3.1.2 </ul>
+  <ul align="center"><b>NPM</b> >= 6.9.0 </ul>
 </li>
-### Getting started - Mobile 
-`cd mobile`<br/>
-`npm install`<br/>
-`yarn start`
+<h3 align="center">Getting Started - Mobile </h3>
+<li>
+<ul align="center">cd mobile</ul>
+<ul align="center">npm install</ul>
+<ul align="center">yarn start</ul>
+</li>
+<p align="center">:heavy_exclamation_mark: The backend will start on 19002 port and the Expo client on <b>exp://YourLocalIP:19000</b> or Tunnel.</p>
 
-:heavy_exclamation_mark: The backend will start on 19002 port and the Expo client on <b>exp://YourLocalIP:19000</b> or Tunnel.
-
-:newspaper: <a href="https://docs.expo.io/versions/latest/workflow/how-expo-works/">Learn about how expo works here.</a>
+<p align="center">:newspaper: <a href="https://docs.expo.io/versions/latest/workflow/how-expo-works/">Learn about how expo works here.</a> </p>
 
 
