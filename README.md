@@ -16,15 +16,15 @@
 <p align="center">
 <img src="new_assets/teste5.png" />
 </p>
+</br>
 
 
-
-### :electric_plug: Requeriments
-
-- Yarn >= 1.17.3
-- Expo >= 3.1.2
-- NPM >= 6.9.0
-
+<h3 align="center"> :electric_plug: Requeriments </h3>
+<li display="table-cell">
+  <ul>- Yarn >= 1.17.3</ul>
+  <ul>- Expo >= 3.1.2 </ul>
+  <ul>- NPM >= 6.9.0 </ul>
+</li>
 ### Getting started - Mobile 
 `cd mobile`<br/>
 `npm install`<br/>
