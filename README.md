@@ -24,7 +24,7 @@
 - Expo >= 3.1.2
 - NPM >= 6.9.0
 
-<h2> Getting started - Mobile </h2>
+### Getting started - Mobile 
 `cd mobile`<br/>
 `npm install`<br/>
 `yarn start`
