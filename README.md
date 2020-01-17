@@ -1,4 +1,5 @@
-<h1 align="center">GitHuber</h1>
+<h1 align="center">GitHuber</h1></br>
+<h4 align="center"> You can scrap your repositories from github with this app </h4></br>
 
 <p align="center">
 <img src="new_assets/teste1.png" />
@@ -18,7 +19,7 @@
 
 
 
-<h2>:electric_plug: Requeriments</h2>
+### :electric_plug: Requeriments
 
 - Yarn >= 1.17.3
 - Expo >= 3.1.2
