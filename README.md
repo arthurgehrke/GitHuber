@@ -26,11 +26,11 @@
   <p align="center"><b>NPM</b> >= 6.9.0 </p>
 </ul>
 <h3 align="center">Getting Started - Mobile </h3>
-<li>
+<ul>
   <p align="center"><b>cd</b> mobile</p>
 <p align="center"><b>npm</b> install</p>
 <p align="center"><b>yarn</b> start</p>
-</li>
+</ul>
 <p align="center">:heavy_exclamation_mark: The backend will start on 19002 port and the Expo client on <b>exp://YourLocalIP:19000</b> or Tunnel.</p>
 
 <p align="center">:newspaper: <a href="https://docs.expo.io/versions/latest/workflow/how-expo-works/">Learn about how expo works here.</a> </p>
